@@ -9,7 +9,7 @@ const Navbar = () => {
       <Container maxWidth="lg">
         <Toolbar>
           <Typography variant="h5" component="p">
-            Bank of React
+            Mortgage Calculator
           </Typography>
         </Toolbar>
       </Container>
