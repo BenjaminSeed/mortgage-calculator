@@ -14,7 +14,7 @@ const SliderComponent = ({
   amount,
 }) => {
   return (
-    <>
+    <Stack my={1.4}>
       <Stack gap={1}>
         <Typography variant="subtitle2">{label}</Typography>
         <Typography variant="h5">
@@ -34,13 +34,13 @@ const SliderComponent = ({
       />
       <Stack direction="row" justifyContent="space-between">
         <Typography color="text.secondary" variant="caption">
-          £50,000
+          {unit} {min}
         </Typography>
         <Typography color="text.secondary" variant="caption">
-          £3000,000
+          {unit} {max}
         </Typography>
       </Stack>
-    </>
+    </Stack>
   );
 };
 
