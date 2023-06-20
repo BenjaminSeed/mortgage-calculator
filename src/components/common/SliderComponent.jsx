@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import PropTypes from "prop-types";
 import { Stack, Typography } from "@mui/material";
 import Slider from "@mui/material/Slider";
 
@@ -42,6 +42,18 @@ const SliderComponent = ({
       </Stack>
     </Stack>
   );
+};
+
+SliderComponent.propTypes = {
+  label: PropTypes.string.isRequired,
+  step: PropTypes.number.isRequired,
+  value: PropTypes.number.isRequired,
+  unit: PropTypes.string.isRequired,
+  amount: PropTypes.number.isRequired,
+  onChange: PropTypes.func.isRequired,
+  defaultValue: PropTypes.number.isRequired,
+  min: PropTypes.number.isRequired,
+  max: PropTypes.number.isRequired,
 };
 
 export default SliderComponent;

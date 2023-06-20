@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import PropTypes from "prop-types";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
@@ -29,6 +29,11 @@ const TenureSelect = ({ data, setData }) => {
       </Select>
     </FormControl>
   );
+};
+
+TenureSelect.propTypes = {
+  data: PropTypes.object.isRequired,
+  setData: PropTypes.func.isRequired,
 };
 
 export default TenureSelect;

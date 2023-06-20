@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import PropTypes from "prop-types";
 import SliderComponent from "./common/SliderComponent";
 
 const SliderSelect = ({ data, setData }) => {
@@ -78,6 +78,11 @@ const SliderSelect = ({ data, setData }) => {
       />
     </div>
   );
+};
+
+SliderSelect.propTypes = {
+  data: PropTypes.object.isRequired,
+  setData: PropTypes.func.isRequired,
 };
 
 export default SliderSelect;
