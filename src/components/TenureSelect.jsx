@@ -26,6 +26,10 @@ const TenureSelect = ({ data, setData }) => {
         <MenuItem value={5}>5 Years</MenuItem>
         <MenuItem value={10}>10 Years</MenuItem>
         <MenuItem value={15}>15 Years</MenuItem>
+        <MenuItem value={20}>20 Years</MenuItem>
+        <MenuItem value={25}>25 Years</MenuItem>
+        <MenuItem value={30}>30 Years</MenuItem>
+        <MenuItem value={35}>35 Years</MenuItem>
       </Select>
     </FormControl>
   );

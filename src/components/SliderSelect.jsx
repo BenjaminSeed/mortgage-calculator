@@ -4,7 +4,7 @@ import SliderComponent from "./common/SliderComponent";
 const SliderSelect = ({ data, setData }) => {
   console.log(data);
 
-  const bank_limit = 10000;
+  const bank_limit = 300000;
 
   return (
     <div>
@@ -14,7 +14,7 @@ const SliderSelect = ({ data, setData }) => {
         max={bank_limit}
         defaultValue={data.homeValue}
         value={data.homeValue}
-        step={100}
+        step={1000}
         onChange={(e, value) =>
           setData({
             ...data,
